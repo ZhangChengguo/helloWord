@@ -1,0 +1,15 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mytest?serverTimezone=GMT
+    username: root
+    password: Root!Zcg0526
+mybatis:
+  type-aliases-package: com.zhangcg.basesystem.*.model
+  mapper-locations: classpath:/mapper/*.xml
+  check-config-location: true
+redisson:
+  address: redis://39.102.90.228:6379
+  password: cgatt1314
